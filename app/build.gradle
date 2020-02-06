@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        encoding "UTF-8"
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+
+    defaultConfig {
+        applicationId "aaf.com.br.favodemelapp"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 59
+        versionName "1.0.59"
+        generatedDensities = []
+    }
+
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+/*
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:design:27.1.0'
+}*/
+
+dependencies {
+    implementation group: 'com.cedarsoftware', name: 'json-io', version: '4.1.6'
+    /* implementation 'com.android.support:customtabs:27.2.0'*/
+}
+
+dependencies {
+    implementation group: 'com.github.chrisbanes.photoview', name: 'library', version: '1.2.3'
+}
+
+dependencies {
+    implementation group: 'org.aaf.escolar', name: 'EscolarDTO', version: '0.0.2-SNAPSHOT'
+}
+
+dependencies {
+    implementation(group: 'com.google.firebase', name: 'firebase-messaging', version: '12.0.1') {
+        exclude group: 'com.google.android.gms', module: 'play-services-maps'
+    }
+}
+
+dependencies {
+    implementation('com.google.firebase:firebase-core:12.0.1') {
+        exclude group: 'com.google.android.gms', module: 'play-services-maps'
+    }
+    implementation('com.google.firebase:firebase-messaging:12.0.1') {
+        exclude group: 'com.google.android.gms', module: 'play-services-maps'
+    }
+    implementation('com.google.firebase:firebase-config:12.0.1') {
+        exclude group: 'com.google.android.gms', module: 'play-services-maps'
+    }
+    implementation('com.firebase:firebase-jobdispatcher:0.8.5') {
+        exclude group: 'com.google.android.gms', module: 'play-services-maps'
+    }
+}
+
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
+
+dependencies {
+    implementation 'com.google.maps.android:android-maps-utils:0.4+'
+    implementation 'com.google.android.gms:play-services-maps:12.0.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.+'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:design:28.0.0'
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}
+
+dependencies {
+    //  implementation 'com.google.android.gms:play-services-maps:+'
+    implementation 'com.android.support:appcompat-v7:28.+'
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:+'
+}

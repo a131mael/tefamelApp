@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "831229244425",
+    "firebase_url": "https://favodemel-85285.firebaseio.com",
+    "project_id": "favodemel-85285",
+    "storage_bucket": "favodemel-85285.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831229244425:android:7c79a0b0ba1fc183",
+        "android_client_info": {
+          "package_name": "aaf.com.br.favodemelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831229244425-nat7qmpac4gd3i9n3eieerbt5h3h4d3b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTtSLzuDt-xmw7xY1RI8sJYLmacGwtlFg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
